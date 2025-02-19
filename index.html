@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ลิงก์ไอคอน hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
   </head>
   
     <!-- Start Coding Here -->
   <body class="bg-[#F6F6FB] px-10">
         <!-- Navigation -->
-        <nav class="bg-[#FFFFFF] mt-5 mb-144 w-full px-6 rounded-[99px]">
+        <nav class="bg-[#FFFFFF] min-[375px] mt-5 mb-144 w-full px-6 rounded-[99px]">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
                     <span class="text-[24px] font-bold  ">Acme</span>
                     <span class="text-[#5E44FF] text-[50px] relative bottom-5">.</span>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden min-[375px]:flex md:flex items-center space-x-8">
                     <a href="#" class="text-[#5E44FF] underline">Home</a>
                     <a href="#" class="text-[#1A1A2C] hover:text-gray-900">Features</a>
                     <a href="#" class="text-[#1A1A2C] hover:text-">Pricing</a>
                     <a href="#" class="text-[#1A1A2C] hover:text-gray-900">Contact</a>
+                </div>
+                <!-- /ไอคอน hamburger menu/ -->
+                <div class="min-[375px]:hidden">
+                    <i class="fa-solid fa-bars"></i> 
                 </div>
             </div>
         </nav>
